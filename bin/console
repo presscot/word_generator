@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+
+<?php
+
+use Press\Engine\AppHandler;
+use Press\Engine\Adapter\CommandLineAdapter\CliAdapter;
+use Press\Engine\Adapter\CommandLineAdapter\Aggregator\InputHydrator;
+
+require __DIR__ . '/../vendor/autoload.php';
+
+$input = InputHydrator::createFromGlobal();
+$cli = new CliAdapter($input);
+(new AppHandler())->handle($cli);

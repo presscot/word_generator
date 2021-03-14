@@ -1,0 +1,4 @@
+/.idea/
+/var/log/*.log
+/data/*.txt
+/vendor/

@@ -1,0 +1,27 @@
+{
+    "name": "press/word_generator",
+    "license": "proprietary",
+    "type": "library",
+    "description": "",
+    "require": {
+        "php": ">=8.0",
+        "ext-icu": "*",
+        "ext-gmp": "*",
+        "psr/log": "^1.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Press\\Engine\\": "src/",
+            "Press\\BusinessLogic\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Press\\LoadBalancer\\Tests\\": "tests/"
+        }
+    }
+}
